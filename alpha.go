@@ -15,4 +15,5 @@ func main() {
 	fmt.Println("Nama : Kevin Arta Wijaya NIM : 42630015")
 	fmt.Println(p, q, r, s, u, t)
 	fmt.Println("Nilai a : ", a)
+	fmt.Println("Nilai b : ", b)
 }
