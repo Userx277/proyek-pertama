@@ -9,4 +9,7 @@ func main() {
 
 	angka = append(angka, 40)
 	fmt.Println(angka, len(angka), cap(angka))
+
+	angka = append(angka, 50)
+	fmt.Println(angka, len(angka), cap(angka))
 }
