@@ -3,16 +3,16 @@ package main
 import "fmt"
 
 func main() {
-	nilai := []int{80, 75, 90}
-	nilai = append(nilai, 85, 95)
-	nilai[0] = 100
-	for i := 0; i < len(nilai); i++ {
-		fmt.Println(1, nilai[i])
-	}
-	for i, v := range nilai {
-		fmt.Println(i, v)
-	}
+	nilai := []float64{78.5, 82, 91.5, 64, 88}
+	var total float64
+	lulus := 0
+
 	for _, v := range nilai {
-		fmt.Println(v)
+		total += v
+		if v >= 75 {
+			lulus++
+		}
 	}
+	rata := total / float64(len(nilai))
+	fmt.Println(total, rata, lulus)
 }
